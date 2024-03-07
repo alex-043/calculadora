@@ -15,8 +15,14 @@ public class Main {
 
         System.out.println("Escribe el primer numero");
         num1 = sc.nextDouble();
+        System.out.println("Escribe el segundo numero");
+        num2 = sc.nextDouble();
 
         System.out.println("------Menu------");
+        System.out.println("1.Suma");
+        System.out.println("2.Resta");
+        System.out.println("3.Multiplicacion");
+        System.out.println("4.Division");
 
 
     }
