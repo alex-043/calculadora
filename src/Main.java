@@ -31,6 +31,7 @@ public class Main {
         switch(opcion){
             case "1":
                 System.out.println("Suma");
+                Suma s = new Suma(num1, num2);
                 break;
             case "2":
                 System.out.println("Resta");
