@@ -18,13 +18,13 @@ public class Main {
         System.out.println("Escribe el segundo numero");
         num2 = sc.nextDouble();
 
-        System.out.println("---------Menu---------");
+        System.out.println("----------Menu----------");
         System.out.println("1.Suma");
         System.out.println("2.Resta");
         System.out.println("3.Multiplicacion");
         System.out.println("4.Division");
         System.out.println("0.Salir");
-        System.out.println("----------------------");
+        System.out.println("------------------------");
         System.out.println("Escoge una opcion");
         String opcion = sc.nextLine();
 
