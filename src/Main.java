@@ -41,7 +41,6 @@ public class Main {
 
                     System.out.println("El resultado de la operacion es "+Suma.Suma(num1, num2));
                     sc.nextLine();
-
                     break;
 
                 case "2":
@@ -56,7 +55,6 @@ public class Main {
 
                     System.out.println("El resultado de la operacion es " + Resta.Resta(num1, num2));
                     sc.nextLine();
-
                     break;
 
                 case "3":
@@ -72,7 +70,6 @@ public class Main {
 
                     System.out.println("El resultado de la operacion es " + Multiplicar.Multiplicar(num1, num2));
                     sc.nextLine();
-
                     break;
 
                 case "4":
@@ -88,20 +85,17 @@ public class Main {
 
                     System.out.println("El resultado de la division es " + Division.Dividir(num1, num2));
                     sc.nextLine();
-
                     break;
 
                 case "0":
-
                     System.out.println("Hasta otra");
-
                     break;
+
                 default:
                     System.out.println("Opcion incorrecta");
                     break;
 
             }
-
         } while (!opcion.equalsIgnoreCase("0")) ;
     }
 }
