@@ -1,6 +1,7 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
@@ -45,7 +46,18 @@ public class Main {
                     break;
                 case "2":
                     System.out.println("Resta");
+                    Resta Resta = new Resta();
+
+                    System.out.println("Escribe el primer numero");
+                    num1 = sc.nextDouble();
+                    Resta.setNum(num1);
+
+                    System.out.println("Escribe el segundo numero");
+                    num2 = sc.nextDouble();
+                    System.out.println("El resultado de la resta es" + Resta.Resta(num1, num2));
+                    sc.nextLine();
                     break;
+
                 case "3":
                     System.out.println("Multiplicar");
                     break;
