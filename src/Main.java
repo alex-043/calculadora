@@ -11,6 +11,7 @@ public class Main {
         String opcion = "";
 
         do {
+            System.out.println("-----------");
             System.out.println("Calculadora");
 
             double num1 = 0;
@@ -25,7 +26,7 @@ public class Main {
             System.out.println("------------------------");
             System.out.println("Escoge una opcion");
             opcion = sc.nextLine();
-
+            System.out.println("------------------------");
             switch (opcion) {
                 case "1":
                     System.out.println("Suma");
