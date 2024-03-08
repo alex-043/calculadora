@@ -8,6 +8,8 @@ public class Main {
     public static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
+        String opcion = "";
+      
         System.out.println("Calculadora");
 
         double num1 = 0;
@@ -47,8 +49,7 @@ public class Main {
             default:
                 System.out.println("Opcion incorrecta");
                 break;
-        } while (opcion != "0");
 
-
+        } while (!opcion.equalsIgnoreCase("0")) ;
     }
 }
