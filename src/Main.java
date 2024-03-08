@@ -1,10 +1,24 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
+/**
+ * @author Alejandro Hernandez Aranda DAM1B
+ *
+ * Esta clase sirve como enlace entre todas las clases (Suma, Resta, Multiplicar y Division),
+ * asi como un menu para realizar dichas operaciones.
+ * En resumen, una calculadora simple.
+ */
+
+
 public class Main {
+
+    /**
+     * @Param num1 Numero 1, es el primer numero que introducirá el usuario por consola
+     * @Param num2 Numero2. Segundo numero introducido por el usuario por consola. Ambos
+     * numeros se utilizarán para las diversas operaciones de este proyecto.
+     */
 
     public static Scanner sc = new Scanner(System.in);
 
@@ -31,6 +45,12 @@ public class Main {
             switch (opcion) {
                 case "1":
                     System.out.println("Suma");
+
+                    /**
+                     * Este metodo implementará la clase
+                     * {@link Suma}
+                     */
+
                     Suma Suma = new Suma();
 
                     System.out.println("Escribe el primer numero");
@@ -41,12 +61,16 @@ public class Main {
 
                     System.out.println("El resultado de la operacion es "+Suma.Suma(num1, num2));
                     sc.nextLine();
-
                     break;
 
                 case "2":
                     System.out.println("Resta");
                     Resta Resta = new Resta();
+
+                    /**
+                     * Este metodo implementará la clase
+                     * {@link Resta}
+                     */
 
                     System.out.println("Escribe el primer numero");
                     num1 = sc.nextDouble();
@@ -56,11 +80,15 @@ public class Main {
 
                     System.out.println("El resultado de la operacion es " + Resta.Resta(num1, num2));
                     sc.nextLine();
-
                     break;
 
                 case "3":
                     System.out.println("Multiplicar");
+
+                    /**
+                     * Este metodo implementará la clase
+                     * {@link Multiplicar}
+                     */
 
                     Multiplicar Multiplicar = new Multiplicar();
 
@@ -72,11 +100,15 @@ public class Main {
 
                     System.out.println("El resultado de la operacion es " + Multiplicar.Multiplicar(num1, num2));
                     sc.nextLine();
-
                     break;
 
                 case "4":
                     System.out.println("Dividir");
+
+                    /**
+                     * Este metodo implementará la clase
+                     * {@link Division}
+                     */
 
                     Division Division = new Division();
 
@@ -88,20 +120,17 @@ public class Main {
 
                     System.out.println("El resultado de la division es " + Division.Dividir(num1, num2));
                     sc.nextLine();
-
                     break;
 
                 case "0":
-
                     System.out.println("Hasta otra");
-
                     break;
+
                 default:
                     System.out.println("Opcion incorrecta");
                     break;
 
             }
-
 
         } while (!opcion.equalsIgnoreCase("0")) ;
     }
