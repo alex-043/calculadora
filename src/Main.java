@@ -35,36 +35,66 @@ public class Main {
 
                     System.out.println("Escribe el primer numero");
                     num1 = sc.nextDouble();
-                    Suma.setNum(num1);
 
                     System.out.println("Escribe el segundo numero");
                     num2 = sc.nextDouble();
-                    Suma.setNum2(num2);
-                    System.out.println("El resultado de la suma es "+Suma.Suma(num1, num2));
+
+                    System.out.println("El resultado de la operacion es "+Suma.Suma(num1, num2));
                     sc.nextLine();
 
                     break;
+
                 case "2":
                     System.out.println("Resta");
                     Resta Resta = new Resta();
 
                     System.out.println("Escribe el primer numero");
                     num1 = sc.nextDouble();
-                    Resta.setNum(num1);
 
                     System.out.println("Escribe el segundo numero");
                     num2 = sc.nextDouble();
-                    System.out.println("El resultado de la resta es" + Resta.Resta(num1, num2));
+
+                    System.out.println("El resultado de la operacion es " + Resta.Resta(num1, num2));
                     sc.nextLine();
+
                     break;
 
                 case "3":
                     System.out.println("Multiplicar");
+
+                    Multiplicar Multiplicar = new Multiplicar();
+
+                    System.out.println("Escribe el primer numero");
+                    num1 = sc.nextDouble();
+
+                    System.out.println("Escribe el segundo numero");
+                    num2 = sc.nextDouble();
+
+                    System.out.println("El resultado de la operacion es " + Multiplicar.Multiplicar(num1, num2));
+                    sc.nextLine();
+
                     break;
+
                 case "4":
                     System.out.println("Dividir");
+
+                    Division Division = new Division();
+
+                    System.out.println("Escribe el primer numero");
+                    num1 = sc.nextDouble();
+
+                    System.out.println("Escribe el segundo numero");
+                    num2 = sc.nextDouble();
+
+                    System.out.println("El resultado de la division es " + Division.Dividir(num1, num2));
+                    sc.nextLine();
+
                     break;
+
                 case "0":
+
+                    System.out.println("Hasta otra");
+
                     break;
                 default:
                     System.out.println("Opcion incorrecta");
