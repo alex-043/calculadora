@@ -8,10 +8,4 @@ public class Multiplicar {
         return resultado;
     }
 
-    @Override
-    public String toString(){
-        return "Multiplicacion: " + (num * num2);
-    }
-
-
 }

@@ -8,10 +8,4 @@ public class Suma {
         return resultado;
     }
 
-
-    @Override
-    public String toString(){
-        return "Suma: " + (num + num2);
-    }
-
 }

@@ -8,8 +8,4 @@ public class Resta {
         return resultado;
     }
 
-    @Override
-    public String toString(){
-        return "Resta: " + (num - num2);
-    }
 }
