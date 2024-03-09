@@ -142,9 +142,13 @@ public class Main {
 
         System.out.println("Escribe el segundo numero");
         num2 = sc.nextDouble();
+        if(num2 == 0){
+            System.out.println("El resultado de la division es 0");
+        }else {
+            System.out.println("El resultado de la division es " + Division.Dividir(num1, num2));
+            sc.nextLine();
+        }
 
-        System.out.println("El resultado de la division es " + Division.Dividir(num1, num2));
-        sc.nextLine();
     }
 
 
