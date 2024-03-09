@@ -9,9 +9,6 @@ public class Resta {
      * @return en este caso devolvera la resta del segundo numero al primero
      */
 
-    private double num;
-    private double num2;
-
     public static double Resta(double num, double num2){
         double resultado = num - num2;
         return resultado;
