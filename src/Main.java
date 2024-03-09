@@ -76,7 +76,7 @@ public class Main {
         } while (!opcion.equalsIgnoreCase("0")) ;
     }
 
-    public static void CalcSuma(double num1, double num2){
+    public static void CalcSuma(double ns1, double ns2){
         /**
          * Este metodo implementará la clase
          * {@link Suma}
@@ -85,16 +85,16 @@ public class Main {
         Suma Suma = new Suma();
 
         System.out.println("Escribe el primer numero");
-        num1 = sc.nextDouble();
+        ns1 = sc.nextDouble();
 
         System.out.println("Escribe el segundo numero");
-        num2 = sc.nextDouble();
+        ns2 = sc.nextDouble();
 
-        System.out.println("El resultado de la operacion es "+Suma.Suma(num1, num2));
+        System.out.println("El resultado de la operacion es "+Suma.Suma(ns1, ns2));
         sc.nextLine();
     }
 
-    public static void CalcResta(double num1, double num2){
+    public static void CalcResta(double nr1, double nr2){
         Resta Resta = new Resta();
 
         /**
@@ -103,16 +103,16 @@ public class Main {
          */
 
         System.out.println("Escribe el primer numero");
-        num1 = sc.nextDouble();
+        nr1 = sc.nextDouble();
 
         System.out.println("Escribe el segundo numero");
-        num2 = sc.nextDouble();
+        nr2 = sc.nextDouble();
 
-        System.out.println("El resultado de la operacion es " + Resta.Resta(num1, num2));
+        System.out.println("El resultado de la operacion es " + Resta.Resta(nr1, nr2));
         sc.nextLine();
     }
 
-    public static void CalcMulti(double num1, double num2){
+    public static void CalcMulti(double nm1, double nm2){
         /**
          * Este metodo implementará la clase
          * {@link Multiplicar}
@@ -121,16 +121,16 @@ public class Main {
         Multiplicar Multiplicar = new Multiplicar();
 
         System.out.println("Escribe el primer numero");
-        num1 = sc.nextDouble();
+        nm1 = sc.nextDouble();
 
         System.out.println("Escribe el segundo numero");
-        num2 = sc.nextDouble();
+        nm2 = sc.nextDouble();
 
-        System.out.println("El resultado de la operacion es " + Multiplicar.Multiplicar(num1, num2));
+        System.out.println("El resultado de la operacion es " + Multiplicar.Multiplicar(nm1, nm2));
         sc.nextLine();
     }
 
-    public static void CalcDiv(double num1, double num2){
+    public static void CalcDiv(double nd1, double nd2){
         /**
          * Este metodo implementará la clase
          * {@link Division}
@@ -139,14 +139,14 @@ public class Main {
         Division Division = new Division();
 
         System.out.println("Escribe el primer numero");
-        num1 = sc.nextDouble();
+        nd1 = sc.nextDouble();
 
         System.out.println("Escribe el segundo numero");
-        num2 = sc.nextDouble();
-        if(num2 == 0){
+        nd2 = sc.nextDouble();
+        if(nd2 == 0){
             System.out.println("El resultado de la division es 0");
         }else {
-            System.out.println("El resultado de la division es " + Division.Dividir(num1, num2));
+            System.out.println("El resultado de la division es " + Division.Dividir(nd1, nd2));
             sc.nextLine();
         }
 

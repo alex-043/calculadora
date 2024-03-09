@@ -1,0 +1,10 @@
+
+
+java:S1488"aImmediately return this expression instead of assigning it to the temporary variable "resultado".(Â£¬J$d0ff565b-fb33-4ce3-a7b1-4adff7ac736a
+V
+java:S1220""Move this file to a named package.J$0d550926-f496-4c10-aa01-5403966e7fef
+ˆ
+java:S1223"LRename this method to prevent any misunderstanding or make it a constructor.(Å¿ŸØJ$e0b46c6a-f4cd-440c-b3ed-7300d8e0e465
+V
+java:S1118":Add a private constructor to hide the implicit public one.(Â÷€8¢Óé â1
+‰	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å¿ŸØJ$2ef872ca-44c1-4428-a5b7-e2756c78a164

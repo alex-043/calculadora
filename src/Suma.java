@@ -9,8 +9,6 @@ public class Suma {
      * @return en este caso devolvera la suma de ambos numeros
      */
 
-    private double num;
-    private double num2;
 
     public static double Suma(double num, double num2){
         double resultado = num + num2;
