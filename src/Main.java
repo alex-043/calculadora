@@ -26,7 +26,7 @@ public class Main {
         String opcion = "";
 
         do {
-            System.out.println("-----------");
+            System.out.println("------------------------");
             System.out.println("Calculadora");
 
             double num1 = 0;
@@ -45,81 +45,22 @@ public class Main {
             switch (opcion) {
                 case "1":
                     System.out.println("Suma");
-
-                    /**
-                     * Este metodo implementará la clase
-                     * {@link Suma}
-                     */
-
-                    Suma Suma = new Suma();
-
-                    System.out.println("Escribe el primer numero");
-                    num1 = sc.nextDouble();
-
-                    System.out.println("Escribe el segundo numero");
-                    num2 = sc.nextDouble();
-
-                    System.out.println("El resultado de la operacion es "+Suma.Suma(num1, num2));
-                    sc.nextLine();
+                    CalcSuma(num1, num2);
                     break;
 
                 case "2":
                     System.out.println("Resta");
-                    Resta Resta = new Resta();
-
-                    /**
-                     * Este metodo implementará la clase
-                     * {@link Resta}
-                     */
-
-                    System.out.println("Escribe el primer numero");
-                    num1 = sc.nextDouble();
-
-                    System.out.println("Escribe el segundo numero");
-                    num2 = sc.nextDouble();
-
-                    System.out.println("El resultado de la operacion es " + Resta.Resta(num1, num2));
-                    sc.nextLine();
+                    CalcResta(num1, num2);
                     break;
 
                 case "3":
                     System.out.println("Multiplicar");
-
-                    /**
-                     * Este metodo implementará la clase
-                     * {@link Multiplicar}
-                     */
-
-                    Multiplicar Multiplicar = new Multiplicar();
-
-                    System.out.println("Escribe el primer numero");
-                    num1 = sc.nextDouble();
-
-                    System.out.println("Escribe el segundo numero");
-                    num2 = sc.nextDouble();
-
-                    System.out.println("El resultado de la operacion es " + Multiplicar.Multiplicar(num1, num2));
-                    sc.nextLine();
+                    CalcMulti(num1, num2);
                     break;
 
                 case "4":
                     System.out.println("Dividir");
-
-                    /**
-                     * Este metodo implementará la clase
-                     * {@link Division}
-                     */
-
-                    Division Division = new Division();
-
-                    System.out.println("Escribe el primer numero");
-                    num1 = sc.nextDouble();
-
-                    System.out.println("Escribe el segundo numero");
-                    num2 = sc.nextDouble();
-
-                    System.out.println("El resultado de la division es " + Division.Dividir(num1, num2));
-                    sc.nextLine();
+                    CalcDiv(num1, num2);
                     break;
 
                 case "0":
@@ -133,4 +74,78 @@ public class Main {
             }
         } while (!opcion.equalsIgnoreCase("0")) ;
     }
+
+    public static void CalcSuma(double num1, double num2){
+        /**
+         * Este metodo implementará la clase
+         * {@link Suma}
+         */
+
+        Suma Suma = new Suma();
+
+        System.out.println("Escribe el primer numero");
+        num1 = sc.nextDouble();
+
+        System.out.println("Escribe el segundo numero");
+        num2 = sc.nextDouble();
+
+        System.out.println("El resultado de la operacion es "+Suma.Suma(num1, num2));
+        sc.nextLine();
+    }
+
+    public static void CalcResta(double num1, double num2){
+        Resta Resta = new Resta();
+
+        /**
+         * Este metodo implementará la clase
+         * {@link Resta}
+         */
+
+        System.out.println("Escribe el primer numero");
+        num1 = sc.nextDouble();
+
+        System.out.println("Escribe el segundo numero");
+        num2 = sc.nextDouble();
+
+        System.out.println("El resultado de la operacion es " + Resta.Resta(num1, num2));
+        sc.nextLine();
+    }
+
+    public static void CalcMulti(double num1, double num2){
+        /**
+         * Este metodo implementará la clase
+         * {@link Multiplicar}
+         */
+
+        Multiplicar Multiplicar = new Multiplicar();
+
+        System.out.println("Escribe el primer numero");
+        num1 = sc.nextDouble();
+
+        System.out.println("Escribe el segundo numero");
+        num2 = sc.nextDouble();
+
+        System.out.println("El resultado de la operacion es " + Multiplicar.Multiplicar(num1, num2));
+        sc.nextLine();
+    }
+
+    public static void CalcDiv(double num1, double num2){
+        /**
+         * Este metodo implementará la clase
+         * {@link Division}
+         */
+
+        Division Division = new Division();
+
+        System.out.println("Escribe el primer numero");
+        num1 = sc.nextDouble();
+
+        System.out.println("Escribe el segundo numero");
+        num2 = sc.nextDouble();
+
+        System.out.println("El resultado de la division es " + Division.Dividir(num1, num2));
+        sc.nextLine();
+    }
+
+
 }
